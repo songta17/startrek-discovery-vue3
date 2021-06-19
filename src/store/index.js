@@ -1,8 +1,10 @@
 import { createStore } from "vuex";
+import apiModule from "@/store/modules/characters/index.js";
 
-export default createStore({
-  state: {},
-  mutations: {},
-  actions: {},
-  modules: {},
+const store = createStore({
+  modules: {
+    characters: apiModule,
+  },
 });
+
+export default store;
